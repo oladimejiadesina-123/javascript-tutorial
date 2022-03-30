@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--===== CSS =====-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Login form style google</title>
+    </head>
+    <style>
+        .l-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+        .form{
+  width: 500px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92,99,105,.2);
+}
+.form__title{
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 3.5rem;
+}
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 30px;
+  font-size: 6px;
+  border: 1px solid;
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.form__label{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #fff;
+  color: greenyellow;
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
+.form__input:focus + .form__label{
+  top: -.5rem;
+  left: .8rem;
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -.5rem;
+  left: .8rem;
+  font-size: 10px;
+  font-weight: 500;
+  z-index: 10;
+}
+.form__input:focus{
+  border: 1.5px solid;
+}
+.two-form {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 50%;
+}
+    </style>
+    <body>
+        <div class="l-formoo">
+            <form action="" class="form">
+                <h1 class="form__title">Sign In</h1>
+                <div class="two-form">
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">firstname</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">lastname</label>
+                    </div>  
+                </div>
+
+                <div class="form__div">
+                    <input type="text" class="form__input list" placeholder=" ">
+                    <label for="" class="form__label">Email</label>
+                </div>
+                <div class="form__div">
+                    <input type="text" class="form__input list" placeholder=" ">
+                    <label for="" class="form__label">Monthly Advertising Budget</label>
+                </div>
+                
+                <div class="form__div">
+                    <input type="text" class="form__input list" placeholder=" ">
+                    <label for="" class="form__label">Phone number</label>
+                </div>
+               
+
+                <input type="submit" class="form__button" value="Sign In">
+            </form>
+        </div>
+    </body>
+</html>

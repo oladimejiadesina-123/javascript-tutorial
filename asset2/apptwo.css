@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-wrapper {
+    display: flex;
+}
+.left, .right {
+    flex: 1;
+} 
+.svg-logo {
+    width: 100px;
+}
+
+.computer-phone {
+    width: 300px;
+}
